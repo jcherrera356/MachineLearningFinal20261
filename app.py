@@ -19,7 +19,7 @@ warnings.filterwarnings('ignore')
 
 st.set_page_config(
     page_title="NYC Taxi Fares — ML Dashboard",
-    page_icon="🚕",
+    page_icon=None,
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -58,6 +58,11 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown(
+    '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">',
+    unsafe_allow_html=True
+)
 
 # ==============================================================================
 # CARGA Y PREPARACION DE DATOS (cache)
@@ -143,18 +148,18 @@ res = preparar_modelo(df)
 # ==============================================================================
 
 with st.sidebar:
-    st.markdown("## 🚕 NYC Taxi ML")
+    st.markdown('<h2><i class="fa-solid fa-taxi"></i> NYC Taxi ML</h2>', unsafe_allow_html=True)
     st.markdown("---")
 
     pagina = st.radio("Navegar por fases:", [
-        "🏠 Portada",
-        "📋 Business Understanding",
-        "🔍 Data Understanding",
-        "🛠️ Data Preparation",
-        "🤖 Modeling",
-        "📊 Evaluation",
-        "⚖️ Etica y Sesgos",
-        "🚀 Deployment"
+        "Portada",
+        "Business Understanding",
+        "Data Understanding",
+        "Data Preparation",
+        "Modeling",
+        "Evaluation",
+        "Etica y Sesgos",
+        "Deployment"
     ])
 
     st.markdown("---")
@@ -206,10 +211,10 @@ df_filtrado = df[
 # PAGINA: PORTADA
 # ==============================================================================
 
-if pagina == "🏠 Portada":
+if pagina == "Portada":
     st.markdown("""
     <div style='text-align:center; padding: 30px 0'>
-        <div style='font-size: 80px'>🚕</div>
+        <div style='font-size: 80px; color: #FFD700'><i class="fa-solid fa-taxi"></i></div>
         <h1 style='font-size: 48px; color: #FFD700; margin: 0'>NYC Taxi Fares</h1>
         <p style='font-size: 20px; color: #aaa'>Prediccion de Tarifas con Machine Learning</p>
         <p style='color: #888'>Metodologia CRISP-DM | Ingenieria de Software | Pascual Bravo 2026-1</p>
@@ -268,8 +273,8 @@ if pagina == "🏠 Portada":
 # PAGINA: BUSINESS UNDERSTANDING
 # ==============================================================================
 
-elif pagina == "📋 Business Understanding":
-    st.markdown("## Fase 1: Business Understanding")
+elif pagina == "Business Understanding":
+    st.markdown('<h2><i class="fa-solid fa-briefcase"></i> Fase 1: Business Understanding</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -335,8 +340,8 @@ elif pagina == "📋 Business Understanding":
 # PAGINA: DATA UNDERSTANDING
 # ==============================================================================
 
-elif pagina == "🔍 Data Understanding":
-    st.markdown("## Fase 2: Data Understanding")
+elif pagina == "Data Understanding":
+    st.markdown('<h2><i class="fa-solid fa-magnifying-glass-chart"></i> Fase 2: Data Understanding</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -524,8 +529,8 @@ elif pagina == "🔍 Data Understanding":
 # PAGINA: DATA PREPARATION
 # ==============================================================================
 
-elif pagina == "🛠️ Data Preparation":
-    st.markdown("## Fase 3: Data Preparation")
+elif pagina == "Data Preparation":
+    st.markdown('<h2><i class="fa-solid fa-screwdriver-wrench"></i> Fase 3: Data Preparation</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -610,8 +615,8 @@ elif pagina == "🛠️ Data Preparation":
 # PAGINA: MODELING
 # ==============================================================================
 
-elif pagina == "🤖 Modeling":
-    st.markdown("## Fase 4: Modeling")
+elif pagina == "Modeling":
+    st.markdown('<h2><i class="fa-solid fa-robot"></i> Fase 4: Modeling</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -692,8 +697,8 @@ elif pagina == "🤖 Modeling":
 # PAGINA: EVALUATION
 # ==============================================================================
 
-elif pagina == "📊 Evaluation":
-    st.markdown("## Fase 5: Evaluation")
+elif pagina == "Evaluation":
+    st.markdown('<h2><i class="fa-solid fa-chart-bar"></i> Fase 5: Evaluation</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -709,18 +714,18 @@ elif pagina == "📊 Evaluation":
         st.markdown("### Regresion Lineal")
         ca, cb, cc = st.columns(3)
         ca.metric("R²",   f"{res['r2_rl']:.4f}",
-                  "CUMPLE ✅" if res['r2_rl'] >= 0.65 else "NO CUMPLE ❌")
+                  "CUMPLE" if res['r2_rl'] >= 0.65 else "NO CUMPLE")
         cb.metric("MAE",  f"${res['mae_rl']:.4f}",
-                  "CUMPLE ✅" if res['mae_rl'] < 3.5 else "NO CUMPLE ❌")
+                  "CUMPLE" if res['mae_rl'] < 3.5 else "NO CUMPLE")
         cc.metric("RMSE", f"${res['rmse_rl']:.4f}")
 
     with col2:
         st.markdown("### Arbol de Decision")
         ca, cb, cc = st.columns(3)
         ca.metric("R²",   f"{res['r2_ad']:.4f}",
-                  "CUMPLE ✅" if res['r2_ad'] >= 0.65 else "NO CUMPLE ❌")
+                  "CUMPLE" if res['r2_ad'] >= 0.65 else "NO CUMPLE")
         cb.metric("MAE",  f"${res['mae_ad']:.4f}",
-                  "CUMPLE ✅" if res['mae_ad'] < 3.5 else "NO CUMPLE ❌")
+                  "CUMPLE" if res['mae_ad'] < 3.5 else "NO CUMPLE")
         cc.metric("RMSE", f"${res['rmse_ad']:.4f}")
 
     st.markdown("---")
@@ -792,8 +797,8 @@ elif pagina == "📊 Evaluation":
 # PAGINA: ETICA Y SESGOS
 # ==============================================================================
 
-elif pagina == "⚖️ Etica y Sesgos":
-    st.markdown("## Fase 5: Etica y Sesgos")
+elif pagina == "Etica y Sesgos":
+    st.markdown('<h2><i class="fa-solid fa-scale-balanced"></i> Fase 5: Etica y Sesgos</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -891,8 +896,8 @@ elif pagina == "⚖️ Etica y Sesgos":
 # PAGINA: DEPLOYMENT
 # ==============================================================================
 
-elif pagina == "🚀 Deployment":
-    st.markdown("## Fase 6: Deployment")
+elif pagina == "Deployment":
+    st.markdown('<h2><i class="fa-solid fa-rocket"></i> Fase 6: Deployment</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
