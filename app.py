@@ -554,7 +554,7 @@ elif pagina == "Data Preparation":
             "color": "#dce8f5",
             "items": [
                 ("propina", "Imputar con 0",
-                 "Pagos en efectivo no registran propina. NaN = sin propina = 0."),
+                 "Se imputa en 0 porque Pagos en tarjeta no registran propina. NaN = sin propina = 0."),
                 ("peajes", "Eliminar + crear tiene_peaje",
                  "92.5% nulos. Variable binaria conserva la informacion clave.")
             ]
