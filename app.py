@@ -447,15 +447,25 @@ elif pagina == "Data Understanding":
         col1, col2 = st.columns([2, 1])
         with col1:
             color_var = st.selectbox("Colorear por:", ['pasajeros', 'color', 'metodo_pago', 'municipio_recogida'])
+            df_sample = df_filtrado.sample(min(2000, len(df_filtrado)))
             fig = px.scatter(
-                df_filtrado.sample(min(2000, len(df_filtrado))),
+                df_sample,
                 x='distancia', y='tarifa',
                 color=color_var,
-                trendline='ols',
                 title="Distancia vs Tarifa con tendencia lineal",
                 labels={'distancia': 'Distancia (millas)', 'tarifa': 'Tarifa (USD)'},
                 opacity=0.5
             )
+            _x = df_filtrado['distancia'].dropna()
+            _y = df_filtrado['tarifa'].dropna()
+            _idx = _x.index.intersection(_y.index)
+            _m, _b = np.polyfit(_x[_idx], _y[_idx], 1)
+            _xr = np.linspace(_x.min(), _x.max(), 100)
+            fig.add_trace(go.Scatter(
+                x=_xr, y=_m * _xr + _b,
+                mode='lines', name='Tendencia',
+                line=dict(color='red', width=2, dash='dash')
+            ))
             fig.update_layout(plot_bgcolor='#1e2130', paper_bgcolor='#1e2130', font_color='white')
             st.plotly_chart(fig, use_container_width=True)
 
