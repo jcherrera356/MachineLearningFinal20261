@@ -153,13 +153,13 @@ with st.sidebar:
 
     pagina = st.radio("Navegar por fases:", [
         "Portada",
-        "Business Understanding",
-        "Data Understanding",
-        "Data Preparation",
-        "Modeling",
-        "Evaluation",
+        "Business Understanding (Comprension del Negocio)",
+        "Data Understanding (Comprension de los Datos)",
+        "Data Preparation (Preparacion de los Datos)",
+        "Modeling (Modelado)",
+        "Evaluation (Evaluacion)",
         "Etica y Sesgos",
-        "Deployment"
+        "Deployment (Despliegue)"
     ])
 
     st.markdown("---")
@@ -275,8 +275,8 @@ if pagina == "Portada":
 # PAGINA: BUSINESS UNDERSTANDING
 # ==============================================================================
 
-elif pagina == "Business Understanding":
-    st.markdown('<h2><i class="fa-solid fa-briefcase"></i> Fase 1: Business Understanding</h2>', unsafe_allow_html=True)
+elif pagina == "Business Understanding (Comprension del Negocio)":
+    st.markdown('<h2><i class="fa-solid fa-briefcase"></i> Fase 1: Business Understanding (Comprension del Negocio)</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -342,8 +342,8 @@ elif pagina == "Business Understanding":
 # PAGINA: DATA UNDERSTANDING
 # ==============================================================================
 
-elif pagina == "Data Understanding":
-    st.markdown('<h2><i class="fa-solid fa-magnifying-glass-chart"></i> Fase 2: Data Understanding</h2>', unsafe_allow_html=True)
+elif pagina == "Data Understanding (Comprension de los Datos)":
+    st.markdown('<h2><i class="fa-solid fa-magnifying-glass-chart"></i> Fase 2: Data Understanding (Comprension de los Datos)</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -541,8 +541,8 @@ elif pagina == "Data Understanding":
 # PAGINA: DATA PREPARATION
 # ==============================================================================
 
-elif pagina == "Data Preparation":
-    st.markdown('<h2><i class="fa-solid fa-screwdriver-wrench"></i> Fase 3: Data Preparation</h2>', unsafe_allow_html=True)
+elif pagina == "Data Preparation (Preparacion de los Datos)":
+    st.markdown('<h2><i class="fa-solid fa-screwdriver-wrench"></i> Fase 3: Data Preparation (Preparacion de los Datos)</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -627,8 +627,8 @@ elif pagina == "Data Preparation":
 # PAGINA: MODELING
 # ==============================================================================
 
-elif pagina == "Modeling":
-    st.markdown('<h2><i class="fa-solid fa-robot"></i> Fase 4: Modeling</h2>', unsafe_allow_html=True)
+elif pagina == "Modeling (Modelado)":
+    st.markdown('<h2><i class="fa-solid fa-robot"></i> Fase 4: Modeling (Modelado)</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -709,8 +709,8 @@ elif pagina == "Modeling":
 # PAGINA: EVALUATION
 # ==============================================================================
 
-elif pagina == "Evaluation":
-    st.markdown('<h2><i class="fa-solid fa-chart-bar"></i> Fase 5: Evaluation</h2>', unsafe_allow_html=True)
+elif pagina == "Evaluation (Evaluacion)":
+    st.markdown('<h2><i class="fa-solid fa-chart-bar"></i> Fase 5: Evaluation (Evaluacion)</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
@@ -908,8 +908,8 @@ elif pagina == "Etica y Sesgos":
 # PAGINA: DEPLOYMENT
 # ==============================================================================
 
-elif pagina == "Deployment":
-    st.markdown('<h2><i class="fa-solid fa-rocket"></i> Fase 6: Deployment</h2>', unsafe_allow_html=True)
+elif pagina == "Deployment (Despliegue)":
+    st.markdown('<h2><i class="fa-solid fa-rocket"></i> Fase 6: Deployment (Despliegue)</h2>', unsafe_allow_html=True)
 
     st.markdown("""
     <div class='story-box'>
