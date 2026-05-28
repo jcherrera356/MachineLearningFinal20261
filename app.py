@@ -18,7 +18,7 @@ warnings.filterwarnings('ignore')
 # ==============================================================================
 
 st.set_page_config(
-    page_title="NYC Taxi Fares — ML Dashboard",
+    page_title="Trabajo Final — ML Dashboard",
     page_icon=None,
     layout="wide",
     initial_sidebar_state="expanded"
