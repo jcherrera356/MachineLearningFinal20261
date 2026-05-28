@@ -219,33 +219,41 @@ if pagina == "Portada":
         <p style='font-size: 20px; color: #aaa'>Predicción de Tarifas con Machine Learning</p>
         <p style='color: #888'>Metodología CRISP-DM | Ingeniería de Software | Pascual Bravo 2026-1</p>
 
-        <div style='display:flex; flex-direction:column; align-items:center; gap:10px; max-width:340px; margin:32px auto 0'>
-            <p style='font-size:13px; color:#aaa; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 4px'>Integrantes</p>
+        <div style='max-width:340px; margin:32px auto 0'>
+            <p style='font-size:13px; color:#aaa; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 12px'>Integrantes</p>
 
-            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
-                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JA</div>
-                <span style='font-size:15px; color:#fff'>Jaime Alberto Alzate</span>
-            </div>
-
-            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
-                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JS</div>
-                <span style='font-size:15px; color:#fff'>Jhon Stiven Cortes</span>
-            </div>
-
-            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
-                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>SH</div>
-                <span style='font-size:15px; color:#fff'>Sebastian Henao</span>
-            </div>
-
-            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
-                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JC</div>
-                <span style='font-size:15px; color:#fff'>Juan Camilo Herrera</span>
-            </div>
-
-            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
-                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JP</div>
-                <span style='font-size:15px; color:#fff'>Juan Pablo Quintero</span>
-            </div>
+            <table style='width:100%; border-collapse:separate; border-spacing:0 8px'>
+                <tr>
+                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
+                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>JA</div>
+                    </td>
+                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Jaime Alberto Alzate</td>
+                </tr>
+                <tr>
+                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
+                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>JS</div>
+                    </td>
+                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Jhon Stiven Cortes</td>
+                </tr>
+                <tr>
+                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
+                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>SH</div>
+                    </td>
+                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Sebastian Henao</td>
+                </tr>
+                <tr>
+                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
+                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>JC</div>
+                    </td>
+                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Juan Camilo Herrera</td>
+                </tr>
+                <tr>
+                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
+                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>JP</div>
+                    </td>
+                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Juan Pablo Quintero</td>
+                </tr>
+            </table>
         </div>
     </div>
     """, unsafe_allow_html=True)
