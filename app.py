@@ -217,7 +217,7 @@ if pagina == "Portada":
         <img src='https://thumbs.dreamstime.com/b/taxi-36488171.jpg' width='180' style='border-radius: 16px; margin-bottom: 16px;'>
         <h1 style='font-size: 48px; color: #FFD700; margin: 0'>Dataset Taxis</h1>
         <p style='font-size: 20px; color: #aaa'>Prediccion de Tarifas con Machine Learning</p>
-        <p style='color: #888'>Metodologia CRISP-DM | Ingenieria de Software | Pascual Bravo 2026-1</p>
+        <p style='color: #888'>Wilson Andres Ramirez Rios | Ingenieria de Software | Pascual Bravo 2026-1</p>
         <p style='color:#aaa; margin-top:32px'>Jaime Alberto Alzate · Jhon Stiven Cortes · Sebastian Henao</p>
         <p style='color:#aaa; margin-top:4px'>Juan Camilo Herrera · Juan Pablo Quintero</p>
     </div>
