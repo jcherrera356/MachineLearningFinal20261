@@ -291,7 +291,7 @@ elif pagina == "Business Understanding":
     with col1:
         st.markdown("### ¿Por que este dataset?")
         razones = [
-            ("Problema real", "La prediccion de tarifas es un caso activo en Uber, Lyft y NYC Taxi"),
+            ("Problema real", "La prediccion de tarifas es un problema vigente en plataformas digitales como Uber, Lyft, servicios de taxi tradicionales y sistemas de transporte publico"),
             ("Variables ricas", "Combina datos numericos, categoricos y temporales"),
             ("Tamano manejable", "6,433 registros — ideal para modelos supervisados en clase"),
             ("Regresion clara", "La variable objetivo `tarifa` es continua con relacion logica a los predictores"),
