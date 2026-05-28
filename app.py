@@ -148,7 +148,7 @@ res = preparar_modelo(df)
 # ==============================================================================
 
 with st.sidebar:
-    st.markdown('<h2><i class="fa-solid fa-taxi"></i> NYC Taxi ML</h2>', unsafe_allow_html=True)
+    st.markdown('<h2><i class="fa-solid fa-taxi"></i> Dataset Taxi ML</h2>', unsafe_allow_html=True)
     st.markdown("---")
 
     pagina = st.radio("Navegar por fases:", [
@@ -289,7 +289,7 @@ elif pagina == "Business Understanding":
     with col1:
         st.markdown("### ¿Por que este dataset?")
         razones = [
-            ("Problema real", "La prediccion de tarifas es un caso activo en Uber, Lyft y NYC Taxi"),
+            ("La predicción de tarifas es un problema real y vigente en plataformas de movilidad como Uber, servicios de taxi tradicionales y sistemas de transporte público."),
             ("Variables ricas", "Combina datos numericos, categoricos y temporales"),
             ("Tamano manejable", "6,433 registros — ideal para modelos supervisados en clase"),
             ("Regresion clara", "La variable objetivo `tarifa` es continua con relacion logica a los predictores"),
