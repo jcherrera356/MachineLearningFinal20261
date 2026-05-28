@@ -223,13 +223,7 @@ if pagina == "Portada":
     </div>
     """, unsafe_allow_html=True)
 
-    st.markdown("---")
 
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Total Viajes", f"{len(df):,}")
-    col2.metric("Tarifa Promedio", f"${df['tarifa'].mean():.2f}")
-    col3.metric("Distancia Promedio", f"{df['distancia'].mean():.2f} mi")
-    col4.metric("Periodo", "Feb–Jun 2019")
 
     st.markdown("---")
     st.markdown("### ¿De qué trata este proyecto?")
@@ -243,6 +237,14 @@ if pagina == "Portada":
     desde entender el problema hasta evaluar y desplegar el modelo.
     </div>
     """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Total Viajes", f"{len(df):,}")
+    col2.metric("Tarifa Promedio", f"${df['tarifa'].mean():.2f}")
+    col3.metric("Distancia Promedio", f"{df['distancia'].mean():.2f} mi")
+    col4.metric("Periodo", "Feb–Jun 2019")
 
     col1, col2 = st.columns(2)
     with col1:
