@@ -219,41 +219,11 @@ if pagina == "Portada":
         <p style='font-size: 20px; color: #aaa'>Prediccion de Tarifas con Machine Learning</p>
         <p style='color: #888'>Metodologia CRISP-DM | Ingenieria de Software | Pascual Bravo 2026-1</p>
 
-        <p style='font-size:13px; color:#aaa; letter-spacing:0.08em; text-transform:uppercase; margin:32px 0 12px'>Integrantes</p>
-        <table style='width:100%; max-width:360px; margin:0 auto; border-collapse:separate; border-spacing:0 8px'>
-            <tr>
-                <td style='width:50px; background:#1e2130; border-radius:10px 0 0 10px; border:1px solid #333; border-right:none; padding:10px 0 10px 14px'>
-                    <div style='width:32px; height:32px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:11px; font-weight:700; text-align:center; line-height:32px'>JA</div>
-                </td>
-                <td style='background:#1e2130; border-radius:0 10px 10px 0; border:1px solid #333; border-left:none; padding:10px 16px; color:#fff; font-size:14px; text-align:left'>Jaime Alberto Alzate</td>
-            </tr>
-            <tr>
-                <td style='width:50px; background:#1e2130; border-radius:10px 0 0 10px; border:1px solid #333; border-right:none; padding:10px 0 10px 14px'>
-                    <div style='width:32px; height:32px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:11px; font-weight:700; text-align:center; line-height:32px'>JS</div>
-                </td>
-                <td style='background:#1e2130; border-radius:0 10px 10px 0; border:1px solid #333; border-left:none; padding:10px 16px; color:#fff; font-size:14px; text-align:left'>Jhon Stiven Cortes</td>
-            </tr>
-            <tr>
-                <td style='width:50px; background:#1e2130; border-radius:10px 0 0 10px; border:1px solid #333; border-right:none; padding:10px 0 10px 14px'>
-                    <div style='width:32px; height:32px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:11px; font-weight:700; text-align:center; line-height:32px'>SH</div>
-                </td>
-                <td style='background:#1e2130; border-radius:0 10px 10px 0; border:1px solid #333; border-left:none; padding:10px 16px; color:#fff; font-size:14px; text-align:left'>Sebastian Henao</td>
-            </tr>
-            <tr>
-                <td style='width:50px; background:#1e2130; border-radius:10px 0 0 10px; border:1px solid #333; border-right:none; padding:10px 0 10px 14px'>
-                    <div style='width:32px; height:32px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:11px; font-weight:700; text-align:center; line-height:32px'>JC</div>
-                </td>
-                <td style='background:#1e2130; border-radius:0 10px 10px 0; border:1px solid #333; border-left:none; padding:10px 16px; color:#fff; font-size:14px; text-align:left'>Juan Camilo Herrera</td>
-            </tr>
-            <tr>
-                <td style='width:50px; background:#1e2130; border-radius:10px 0 0 10px; border:1px solid #333; border-right:none; padding:10px 0 10px 14px'>
-                    <div style='width:32px; height:32px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:11px; font-weight:700; text-align:center; line-height:32px'>JP</div>
-                </td>
-                <td style='background:#1e2130; border-radius:0 10px 10px 0; border:1px solid #333; border-left:none; padding:10px 16px; color:#fff; font-size:14px; text-align:left'>Juan Pablo Quintero</td>
-            </tr>
-        </table>
+        <p style='color:#aaa; margin-top:32px'>Jaime Alberto Alzate &nbsp;·&nbsp; Jhon Stiven Cortes &nbsp;·&nbsp; Sebastian Henao</p>
+        <p style='color:#aaa; margin-top:0'>Juan Camilo Herrera &nbsp;·&nbsp; Juan Pablo Quintero</p>
     </div>
     """, unsafe_allow_html=True)
+
     st.markdown("---")
 
     col1, col2, col3, col4 = st.columns(4)
