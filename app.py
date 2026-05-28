@@ -213,36 +213,41 @@ df_filtrado = df[
 
 if pagina == "Portada":
     st.markdown("""
-   ("<div style='text-align:center; padding: 30px 0'>"
- "<img src='https://thumbs.dreamstime.com/b/taxi-36488171.jpg' width='180' style='border-radius: 16px; margin-bottom: 16px;'>"
- "<h1 style='font-size: 48px; color: #FFD700; margin: 0'>Dataset Taxis</h1>"
- "<p style='font-size: 20px; color: #aaa'>Predicción de Tarifas con Machine Learning</p>"
- "<p style='color: #888'>Metodología CRISP-DM | Ingeniería de Software | Pascual Bravo 2026-1</p>"
+    <div style='text-align:center; padding: 30px 0'>
+        <img src='https://thumbs.dreamstime.com/b/taxi-36488171.jpg' width='180' style='border-radius: 16px; margin-bottom: 16px;'>
+        <h1 style='font-size: 48px; color: #FFD700; margin: 0'>Dataset Taxis</h1>
+        <p style='font-size: 20px; color: #aaa'>Predicción de Tarifas con Machine Learning</p>
+        <p style='color: #888'>Metodología CRISP-DM | Ingeniería de Software | Pascual Bravo 2026-1</p>
 
- "<div style='display:flex; flex-direction:column; align-items:center; gap:10px; max-width:340px; margin:32px auto 0'>"
- "<p style='font-size:13px; color:#aaa; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 4px'>Integrantes</p>"
+        <div style='display:flex; flex-direction:column; align-items:center; gap:10px; max-width:340px; margin:32px auto 0'>
+            <p style='font-size:13px; color:#aaa; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 4px'>Integrantes</p>
 
- "<div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>"
- "<div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JA</div>"
- "<span style='font-size:15px; color:#fff'>Jaime Alberto Alzate</span></div>"
+            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
+                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JA</div>
+                <span style='font-size:15px; color:#fff'>Jaime Alberto Alzate</span>
+            </div>
 
- "<div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>"
- "<div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JS</div>"
- "<span style='font-size:15px; color:#fff'>Jhon Stiven Cortes</span></div>"
+            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
+                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JS</div>
+                <span style='font-size:15px; color:#fff'>Jhon Stiven Cortes</span>
+            </div>
 
- "<div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>"
- "<div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>SH</div>"
- "<span style='font-size:15px; color:#fff'>Sebastian Henao</span></div>"
+            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
+                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>SH</div>
+                <span style='font-size:15px; color:#fff'>Sebastian Henao</span>
+            </div>
 
- "<div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>"
- "<div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JC</div>"
- "<span style='font-size:15px; color:#fff'>Juan Camilo Herrera</span></div>"
+            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
+                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JC</div>
+                <span style='font-size:15px; color:#fff'>Juan Camilo Herrera</span>
+            </div>
 
- "<div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>"
- "<div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JP</div>"
- "<span style='font-size:15px; color:#fff'>Juan Pablo Quintero</span></div>"
-
- "</div></div>")
+            <div style='display:flex; align-items:center; gap:12px; background:#1a1a1a; border:0.5px solid #333; border-radius:12px; padding:10px 20px; width:100%; box-sizing:border-box'>
+                <div style='width:36px; height:36px; border-radius:50%; background:#FFD70022; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:#FFD700'>JP</div>
+                <span style='font-size:15px; color:#fff'>Juan Pablo Quintero</span>
+            </div>
+        </div>
+    </div>
     """, unsafe_allow_html=True)
 
     st.markdown("---")
