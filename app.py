@@ -279,7 +279,7 @@ if pagina == "Portada":
     tab_en, tab_es = st.tabs(["Original (Ingles)", "Traducido (Espanol)"])
 
     with tab_en:
-        df_original = sns.load_dataset('taxis')
+        df_original = sns.load_dataset('taxis').loc[df_filtrado.index]
         st.markdown(f"**{len(df_original):,} registros · {df_original.shape[1]} variables**")
         st.dataframe(df_original, use_container_width=True)
 
@@ -288,8 +288,8 @@ if pagina == "Portada":
                         'tarifa', 'propina', 'peajes', 'total', 'color',
                         'metodo_pago', 'zona_recogida', 'zona_destino',
                         'municipio_recogida', 'municipio_destino']
-        st.markdown(f"**{len(df):,} registros · {len(cols_mostrar)} variables**")
-        st.dataframe(df[cols_mostrar], use_container_width=True)
+        st.markdown(f"**{len(df_filtrado):,} registros · {len(cols_mostrar)} variables**")
+        st.dataframe(df_filtrado[cols_mostrar], use_container_width=True)
 
     st.markdown("""
     <div class='story-box'>
