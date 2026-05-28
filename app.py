@@ -216,45 +216,8 @@ if pagina == "Portada":
     <div style='text-align:center; padding: 30px 0'>
         <img src='https://thumbs.dreamstime.com/b/taxi-36488171.jpg' width='180' style='border-radius: 16px; margin-bottom: 16px;'>
         <h1 style='font-size: 48px; color: #FFD700; margin: 0'>Dataset Taxis</h1>
-        <p style='font-size: 20px; color: #aaa'>Predicción de Tarifas con Machine Learning</p>
-        <p style='color: #888'>Metodología CRISP-DM | Ingeniería de Software | Pascual Bravo 2026-1</p>
-
-        <div style='max-width:340px; margin:32px auto 0'>
-            <p style='font-size:13px; color:#aaa; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 12px'>Integrantes</p>
-
-            <table style='width:100%; border-collapse:separate; border-spacing:0 8px'>
-                <tr>
-                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
-                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>JA</div>
-                    </td>
-                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Jaime Alberto Alzate</td>
-                </tr>
-                <tr>
-                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
-                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>JS</div>
-                    </td>
-                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Jhon Stiven Cortes</td>
-                </tr>
-                <tr>
-                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
-                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>SH</div>
-                    </td>
-                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Sebastian Henao</td>
-                </tr>
-                <tr>
-                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
-                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>JC</div>
-                    </td>
-                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Juan Camilo Herrera</td>
-                </tr>
-                <tr>
-                    <td style='width:44px; padding:10px 0 10px 16px; background:#1a1a1a; border-radius:12px 0 0 12px; border:0.5px solid #333; border-right:none'>
-                        <div style='width:34px; height:34px; border-radius:50%; background:#2a2200; border:1px solid #FFD700; color:#FFD700; font-size:12px; font-weight:600; text-align:center; line-height:34px'>JP</div>
-                    </td>
-                    <td style='padding:10px 16px; background:#1a1a1a; border-radius:0 12px 12px 0; border:0.5px solid #333; border-left:none; color:#fff; font-size:15px'>Juan Pablo Quintero</td>
-                </tr>
-            </table>
-        </div>
+        <p style='font-size: 20px; color: #aaa'>Prediccion de Tarifas con Machine Learning</p>
+        <p style='color: #888'>Metodologia CRISP-DM | Ingenieria de Software | Pascual Bravo 2026-1</p>
     </div>
     """, unsafe_allow_html=True)
 
