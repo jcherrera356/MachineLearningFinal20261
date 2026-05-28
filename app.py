@@ -218,8 +218,8 @@ if pagina == "Portada":
         <h1 style='font-size: 48px; color: #FFD700; margin: 0'>Dataset Taxis</h1>
         <p style='font-size: 20px; color: #aaa'>Prediccion de Tarifas con Machine Learning</p>
         <p style='color: #888'>Wilson Andres Ramirez Rios | Ingenieria de Software | Pascual Bravo 2026-1</p>
-        <p style='color:#aaa; margin-top:32px'>Jaime Alberto Alzate · Jhon Stiven Cortes · Sebastian Henao</p>
-        <p style='color:#aaa; margin-top:4px'>Juan Camilo Herrera · Juan Pablo Quintero</p>
+        <p style='color:#aaa; margin-top:32px'>Jaime Alberto Alzate Marulanda · Jhon Stiven Cortes Rivera · Sebastian Henao Estrada</p>
+        <p style='color:#aaa; margin-top:4px'>Juan Pablo Quintero Lopera · Juan Camilo Herrera Osorio</p>
     </div>
     """, unsafe_allow_html=True)
 
