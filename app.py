@@ -215,7 +215,7 @@ if pagina == "Portada":
     st.markdown("""
     <div style='text-align:center; padding: 30px 0'>
         <img src='https://thumbs.dreamstime.com/b/taxi-36488171.jpg' width='180' style='border-radius: 16px; margin-bottom: 16px;'>
-        <h1 style='font-size: 48px; color: #FFD700; margin: 0'>NYC Taxi Fares</h1>
+        <h1 style='font-size: 48px; color: #FFD700; margin: 0'>Dataset Taxis</h1>
         <p style='font-size: 20px; color: #aaa'>Prediccion de Tarifas con Machine Learning</p>
         <p style='color: #888'>Metodologia CRISP-DM | Ingenieria de Software | Pascual Bravo 2026-1</p>
     </div>
