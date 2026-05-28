@@ -273,6 +273,36 @@ if pagina == "Portada":
         | Periodo | Feb – Jun 2019 |
         """)
 
+    st.markdown("---")
+    st.markdown("### Vista del Dataset")
+
+    tab_en, tab_es = st.tabs(["Original (Ingles)", "Traducido (Espanol)"])
+
+    with tab_en:
+        df_original = sns.load_dataset('taxis')
+        st.markdown(f"**{len(df_original):,} registros · {df_original.shape[1]} variables**")
+        st.dataframe(df_original, use_container_width=True)
+
+    with tab_es:
+        cols_mostrar = ['fecha_recogida', 'fecha_destino', 'pasajeros', 'distancia',
+                        'tarifa', 'propina', 'peajes', 'total', 'color',
+                        'metodo_pago', 'zona_recogida', 'zona_destino',
+                        'municipio_recogida', 'municipio_destino']
+        st.markdown(f"**{len(df):,} registros · {len(cols_mostrar)} variables**")
+        st.dataframe(df[cols_mostrar], use_container_width=True)
+
+    st.markdown("""
+    <div class='story-box'>
+    <b>Columnas traducidas:</b><br>
+    pickup → fecha_recogida &nbsp;|&nbsp; dropoff → fecha_destino &nbsp;|&nbsp;
+    passengers → pasajeros &nbsp;|&nbsp; distance → distancia &nbsp;|&nbsp;
+    fare → tarifa &nbsp;|&nbsp; tip → propina &nbsp;|&nbsp; tolls → peajes &nbsp;|&nbsp;
+    payment → metodo_pago &nbsp;|&nbsp; pickup_zone → zona_recogida &nbsp;|&nbsp;
+    dropoff_zone → zona_destino &nbsp;|&nbsp; pickup_borough → municipio_recogida &nbsp;|&nbsp;
+    dropoff_borough → municipio_destino
+    </div>
+    """, unsafe_allow_html=True)
+
 # ==============================================================================
 # PAGINA: BUSINESS UNDERSTANDING
 # ==============================================================================
